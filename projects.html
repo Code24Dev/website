@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+
+	<!-- Referencing CSS files -->
+	<!--1--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+		integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+		crossorigin="anonymous">
+	<!--2--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+		crossorigin="anonymous">
+	<!--3--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer" />
+
+		<!-- PERSONALLY MADE -->
+	<!--4--><link href="common_styles.css" rel="stylesheet">
+	<!--5--><link href="styles_projects.css" rel="stylesheet">
+
+	<!-- Referencing JavaScript file -->
+	<!--1--><script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            	integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            	crossorigin="anonymous"></script>
+	<!--2--><script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            	integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            	crossorigin="anonymous"></script>
+	<!--3--><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+	<!--4--><script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+    		integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+    		crossorigin="anonymous"
+		referrerpolicy="no-referrer"></script>
+	<!--5--><script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+		<!-- PERSONALLY MADE -->
+		<!-- "defer" specifies that the script is executed after everything else. Used for external scripts-->
+	<!--4--><script src="navigation.js" defer></script>
+	<!--5--><script src="social_media_links.js" defer></script>
+	<!--6--><script src="hover-img-projects.js"></script> <!-- Within the script, it already ensures html file is firstly fully loaded before running the script
+
+	<title>Amani - Personal Website</title>
+</head>
+
+<body class="common-img-bg-settings">
+	<!-- Navigation container -->
+	<div id="navigation-container"></div>
+
+	<div id="special-heading">
+        	<h1>My Projects</h1>
+	</div>
+
+	<div class="c-wrapper">
+
+		<!-- Project 1 -->
+                <div id="proj-tile-1" class="proj-container p-3">
+			<h3>Nebula Intensity</h3>
+			<br>
+			<!-- Message container that will be displayed on hover -->
+			<div class="hover-msg">
+				Go to Github Repository
+			</div>
+			<a href="https://github.com/Amani5576/Nebula_Intensity" target="_blank">
+				<img src='https://github.com/Amani5576/Nebula_Intensity/raw/main/img/HA_filtered_image.png' alt="Hydrogen alpha image from Statue of Liberty Nebula" class="img-for-hover">
+			</a>
+		</div>
+
+		<!-- Project 2 -->
+                <div id="proj-tile-2" class="proj-container p-3"> <!-- The 'p' in 'p-2' means padding. -->
+												<!-- The 'm' in 'm-4' means margin. (better results than using offset) -->
+			<h3>NGC-3576 Temperature Readings</h3>
+			<br>
+			<!-- Message container that will be displayed on hover -->
+			<div class="hover-msg">
+				Go to Github Repository
+			</div>
+			<a href="https://github.com/Amani5576/NGC-3576-Temperature-Readings" target="_blank">
+				<img src='https://github.com/Amani5576/NGC-3576-Temperature-Readings/raw/main/img/Rainbow_Young_hot_stars.png' alt="3D graph of raw data from hydrogen alpha emissions" class="img-for-hover">
+			</a>
+                </div>
+
+		<!-- Project 3 -->
+                <div id="proj-tile-3" class="proj-container p-3">
+			<h3>Binary System Gravitaional Simulator</h3>
+			<br>
+			<!-- Message container that will be displayed on hover -->
+			<div class="hover-msg">
+				Go to Github Repository
+			</div>
+			<a href="https://github.com/Amani5576/Two-body-Gravitational-Simulation" target="_blank">
+				<img src='https://github.com/Amani5576/Two-body-Gravitational-Simulation/blob/main/3D%20gravitational%20pull%20snapshot.png?raw=true' alt="Snapshot of simulation of two body attraction via law of universal gravitation" class="img-for-hover">
+			</a>
+                </div>
+
+		<!-- Project 3 -->
+		<div id="proj-tile-4" class="proj-container p-3">
+			<h3>SHA-1-cryptography</h3>
+			<br>
+			<!-- Message container that will be displayed on hover -->
+			<div class="hover-msg">
+				Go to Github Repository
+			</div>
+			<a href="https://github.com/Amani5576/SHA-1-cryptography" target="_blank">
+				<img src='https://github.com/Amani5576/SHA-1-cryptography/raw/main/img/Drawing_of_round.jpeg' alt="Diagram of SHA-1 algorithm with regards to a round of encryption" class="img-for-hover">
+			</a>
+                </div>
+
+        </div>
+
+	<!-- Social Media Stuff comes here -->
+	<div id="social-media-stuff" class="social-media-links"></div>
+
+</body>
+
+</html>

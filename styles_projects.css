@@ -1,0 +1,79 @@
+/* Adding custom styles that will be referenced by 'projects.html'*/
+
+body {
+	background-image: url('https://github.com/Amani5576/SHA-1-cryptography/blob/main/Background-Image-Projects.jpg?raw=true');
+
+	/*Something seems to overwride the following that should work from common_styles.css file:*/
+		background-size: cover;
+  		background-position: center;
+  		background-repeat: no-repeat;
+}
+
+.c-wrapper { /*Enables wrapping together all containers */
+	margin: 0;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0px 20px 0px 20px;
+}
+
+.proj-container {
+	width: 300px;
+        height: auto;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 0.2);
+	border-size: 1px;
+	background-color: rgba(33, 58, 92, 0.4);  /*Color = Blueish-greyish"*/
+	border-radius: 0px; /* sharp corners */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: all 1s ease; /* transition for smooth animation */
+	position: relative;
+	z-index: 1; /* Setting higher z-index to make it appear on top */
+}
+
+.proj-container:hover {
+	width: 500px; /*enlarged width */
+	height: auto; /*enlarged height */
+	z-index: 2; /* Increasing z-index further on hover */
+	border-color: rgba(255,255,255,1); /* rgba(21, 32, 166, 1) --> Azure Blue*/
+	border-style: solid;;
+	border-size: 2px;
+}
+
+#special-heading {
+	text-align: center;
+	border-bottom:rgba(255,255,255,0.6);
+	padding: 30px;
+}
+
+h3 {
+	font-family: 'Bookman', 'Bookman Old Style', 'Garamond', 'Times New Roman', serif;
+	font-size: 120%;
+	color: rgba(255,255,255,0.6);
+	text-align:center;
+}
+
+.proj-container:hover h3 {
+	color: rgb(255, 255, 255); /*Color =  (rgb(254, 254, 250);Baby Powder) */
+}
+
+.proj-container img {
+	max-width: 100%;
+	max-height: 100%;
+	transition: all 0.3s ease; /* Add transition for smooth image animation */
+}
+
+.proj-container:hover img {
+	max-width: 100%; /* Enlarged width */
+	max-height: 100%; /* Enlarged height */
+}
+
+.hover-msg {
+	display: none;
+	position: fixed;
+	background-color: rgba(33, 58, 92, 0.8);
+	color: #fff; /* Text color */
+	z-index: 5; /* Higher than social media links at the bottom right corner*/
+	padding: 2px 7px 2px 7px;
+}
