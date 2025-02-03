@@ -61,7 +61,7 @@ document.getElementById('navigation-container').innerHTML = `
 								<img src="code24_logo_zoomed_in.png" style="width: 3rem;" alt="Logo">
 							</li>
 							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="code24.html">Home</a>
+								<a class="nav-link active" aria-current="page" href="index.html">Home</a>
 							</li>
 							<li class="nav-item">
 							<a class="nav-link active" aria-current="page" href="#about">About</a>
