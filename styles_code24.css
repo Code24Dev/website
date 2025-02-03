@@ -1,0 +1,15 @@
+.video-container {
+    width: 100%; /* Full width */
+    height: 450px; /* Set desired height */
+    overflow: hidden; /* Hide the overflowing parts */
+    position: relative;
+}
+
+.cropped-video {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Crop the video */
+    position: absolute;
+    top: 50%; /* Move video to center */
+    transform: translateY(-50%); /* Adjust for perfect centering */
+}
