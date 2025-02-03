@@ -1,261 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Referencing CSS files -->
-	<!--1--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-		integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-	<!--2--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-		crossorigin="anonymous">
-	<!--3--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-		integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
 
-	<!-- PERSONALLY MADE -->
-	<!--4--><link href="common_styles.css" rel="stylesheet">
-	<!--5--><link href="styles_index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-	<!-- Referencing JavaScript file -->
-	<!--1--><script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-		crossorigin="anonymous"></script>
-	<!--2--><script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-		crossorigin="anonymous"></script>
-	<!--3--><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-		crossorigin="anonymous"></script>
-	<!--4--><script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
-		integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-	<!-- PERSONALLY MADE -->
-	<!-- "defer" specifies that the script is executed after everything else. Used for external scripts-->
-	<!--5--><script src="navigation.js" defer></script>
-	<!--6--><script src="social_media_links.js" defer></script>
+    <link href="style.css" rel="stylesheet" />
+    <link href="styles_code24.css" rel="stylesheet">
+    <!-- "defer" specifies that the script is executed after everything else. Used for external scripts-->
+    <!--5--><script src="navigation2.js" defer></script>
 
-	<title>Amani - Personal Website</title>
-
+    <title>Code24Web.Dev (Testing)</title>
 </head>
+<body>
 
-<body class="common-img-bg-settings">
-
-	<!-- Navigation container -->
+  <!-- Navigation container -->
 	<div id="navigation-container"></div>
 
-	<!-- Personal Information and Banner Section -->
-	<div class="row justify-content-center profile-page-wrapping">
-		<div class="container-flexibility profile-container-main col-md-4">
+   <!--Showcase-->
+    <div class="carousel slide" id="carouselDemo" data-bs-wrap="true" data-bs-ride="carousel" style="height: 30rem;">
+      <div class="carousel-inner">
+      
+        <div class="carousel-item active" data-bs-interval="4000"> <!--3000 is the time the slide takes in milli-seconds-->
+          <div class="video-container">
+            <video src="video2.mp4" class="cropped-video" autoplay loop muted playsinline></video>
+          </div>
 
-			<!-- Major Tile for Personal Information -->
-			<center>
-			<img src="amani_beach_suite.jpg" alt="Profile Photo" class="profile-photo img-lg">
+          <div class="carousel-caption">
+            <h5>AI powered analysis</h5>
+            <p>
+              Creating sleek, intuitive websites that attract and engage more customers.
+            </p>
 
-			<div id="under-profile-pic" class="profile-content">
-				<p id="name">
-					<span class="double-line">
-						&diams; Samwel Amani Njoroge &diams;
-					</span>
-				</p>
-			</div>
-			</center>
-		</div>
+          </div>
+        </div>
 
-		<!--SECONDARY CONTAINER -->
-		<div class="container-flexibility proj-container col-md-7">
+        <div class="carousel-item" data-bs-interval="5000"> <!--3000 is the time the slide takes in milli-seconds-->
+          <div class="video-container">
+            <video src="video1.mp4" class="cropped-video" autoplay loop muted playsinline></video>
+          </div>
+            <div class="carousel-caption">
+                <h5>AI-Powered Analysis</h5>
+                <p>
+                  Using cutting-edge AI tools, we analyze and craft innovative solutions.
+                </p>
+            </div>
+        </div>
 
-			<!-- Banner with Subtitles as Buttons -->
-			<div class="col-md-fluid">
-				<div class="banner">
-					<button id="mainInfo" class="subtitle-btn active" onclick="changeContent('mainInfo')">
-						Information
-					</button>
-					<button id="statement" class="subtitle-btn" onclick="changeContent('statement')">
-						Statement
-					</button>
-					<button id="education" class="subtitle-btn" onclick="changeContent('education')">
-						Education
-					</button>
-				</div>
-			</div>
+        <div class="carousel-item" data-bs-interval="60000"> <!--3000 is the time the slide takes in milli-seconds-->
+          <div class="video-container">
+            <video src="video3.mp4" class="cropped-video" autoplay loop muted playsinline></video>
+          </div>
+            <div class="carousel-caption">
+                <h5>Computer Science assistance</h5>
+                <p>
+                  Enable us to provide expertise on computer intuitive working projects
+                </p>
+            </div>
+        </div>
 
-			<div class="container-flexibility profile-container col-md-fluid">
+      </div>
 
-				<!-- Content Section -->
-				<div id="contentSection"><!-- CONTENT DYNAMICALLY CHANGES HERE -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselDemo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+    
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselDemo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
 
-					<div class="profile-content indent">
-						<table>
-							<tr>
-								<td class="col_1"><p><strong>Age</strong></p></td>
-								<td class="col_2"><p>24</p></td>
-							</tr>
-							<tr>
-								<td class="col_1"><p><strong>Sex</strong></p></td>
-								<td class="col_2"><p>Male</p></td>
-							</tr>
-							<tr>
-								<td class="col_1"><p><strong>Gender</strong></p></td>
-								<td class="col_2"><p>Man</p></td>
-							</tr>
-							<tr>
-								<td class="col_1"><p><strong>Email Address</strong></p></td>
-								<td class="col_2"><p>randomemailaddress@gmail.com</p></td>
-							</tr>
-							<tr>
-								<td class="col_1"><p><strong>Phone Number</strong></p></td>
-								<td class="col_2"><p>+223962243132</p></td>
-							</tr>
-							<tr>
-								<td class="col_1"><p><strong>Occupation</strong></p></td>
-								<td class="col_2"><p>Student</p></td>
-							</tr>
-							<tr>
-								<td class="col_1"><p><strong>Current Degree</strong></p></td>
-								<td class="col_2"><p>Postgraduate Diploma in Astrophysics and Space Science</p></td>
-							</tr>
-							<tr>
-								<td class="col_1"><p><strong>Univeristy</strong></p></td>
-								<td class="col_2">
-									<p>University of Cape Town (
-										<a href="https://uct.ac.za/" target="_blank">
-											UCT
-										</a>)
-									</p>
-								</td>
-							</tr>
-						</table>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
 
-	<!-- Social Media Stuff comes here -->
-	<div id="social-media-stuff" class="social-media-links"></div>
+    </div>
 
-    <script>
+    <!--Lets get back to you-->
+    <section class="bg-primary text-light p-5">
+      <div class="container">
 
-function changeContent(section) {
-	// Getting the container for the dynamic content area
-	var contentSection = document.getElementById('contentSection');
+        <div class="d-md-flex justify-content-between align-items-center"> 
+          <h3 class="mb-3 mb-md-0">Lets call you back</h3> <!--mb medium bottom 3, mb-md-0 because we do not want mb-3 on medium screen-->
+          
+          <!--forms-->
+          <div class="input-group news-input"> <!--use customized css to control size of the input form on the large screen to be half of its size-->
+            <input type="text" class="form-control" placeholder="Enter your email">
+            <button class="btn btn-dark btn-lg" type="button" >Send</button>
+          </div>
+          
+        </div>
+      </div>
 
-	// Clearing any previous content if there was any
-	contentSection.innerHTML = '';
+    </section>
 
-	// Dynamically changing content based on the selected 'section'
-	switch (section) {
-		case 'statement':
-			contentSection.innerHTML = `
-				<div class="profile-content justify-content-center">
-					<p>
-						Dedicated to advancing the frontiers of astrophysics, my unwavering work ethic
-						is fueled by a profound passion for unraveling the mysteries of the cosmos. With
-						a commitment to precision and innovation, I bring a dynamic approach to research,
-						driven by the belief that understanding the universe is key to unlocking the
-						limitless potential of scientific exploration. Committed to collaboration and
-						lifelong learning, I aim to contribute meaningfully to the ever-evolving landscape
-						of astrophysical inquiry.
-					</p>
-				</div>
-			`;
-			break;
+    <!--Services-->
+    <section class="p-5">
+      <dev class="container">
+git p
+        <dev class="row text-center g-4"> <!--g-4: gab 4 or g-y-->
 
-		case 'education':
-			contentSection.innerHTML = `
-				<div class='profile-content'>
-				<p><strong>Academic Background:</strong></p>
-				<ul>
-					<li>University of Western Cape, Bellville, South Africa</li>
-					<li>Rosebank Progress College, Bellville, South Africa</li>
-					<li>Ecole Ruban Verte, Libreville, Gabon</li>
-					<li>Nairobi Academy, Kenya</li>
-					<li>Laiser Hill Academy, Kenya</li>
-					<li>Brookhouse School, Kenya</li>
-				</ul>
+            <dev class="col-md">
+              <div class="card bg-dark text-light" style="width: 18rem;">
+                <div class="card-body">
+                  <div class="h1 mb-3">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">More info</a>
+                  </div>
+                </div>
+              </div>
+            </dev>
 
-				<p><strong>Degrees/Certificates:</strong></p>
-				<ul>
-					<li>Bachelors in Physical Sciences</li>
-					<li>NSC (National Senior Certificate)</li>
-					<li>IB (International Baccalaureate) Diploma</li>
-				</ul>
-				</div>
-			`;
-			break;
+            <dev class="col-md"> <!-- col-md: column on the medium screen-->
+              <div class="card bg-secondary text-light" style="width: 18rem;">
+                <div class="card-body">
+                  <dev class="h1 mb-3">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-dark">More info</a>
+                  </dev>
+                </div>
+              </div>
+            </dev>
 
-		case 'mainInfo':
-			contentSection.innerHTML = `
-				<div class="profile-content indent">
-					<table>
-						<tr>
-							<td class="col_1"><p><strong>Age</strong></p></td>
-							<td class="col_2"><p>24</p></td>
-						</tr>
-						<tr>
-							<td class="col_1"><p><strong>Sex</strong></p></td>
-							<td class="col_2"><p>Male</p></td>
-						</tr>
-						<tr>
-							<td class="col_1"><p><strong>Gender</strong></p></td>
-							<td class="col_2"><p>Man</p></td>
-						</tr>
-						<tr>
-							<td class="col_1"><p><strong>Email Address</strong></p></td>
-							<td class="col_2"><p>randomemailaddress@gmail.com</p></td>
-						</tr>
-						<tr>
-							<td class="col_1"><p><strong>Phone Number</strong></p></td>
-							<td class="col_2"><p>+223962243132</p></td>
-						</tr>
-						<tr>
-							<td class="col_1"><p><strong>Occupation</strong></p></td>
-							<td class="col_2"><p>Student</p></td>
-						</tr>
-						<tr>
-							<td class="col_1"><p><strong>Current Degree</strong></p></td>
-							<td class="col_2"><p>Postgraduate Diploma in Astrophysics and Space Science</p></td>
-						</tr>
-						<tr>
-							<td class="col_1"><p><strong>Univeristy</strong></p></td>
-							<td class="col_2"><p>University of Cape Town (
-										<a href="https://uct.ac.za/" target="_blank">
-											UCT
-										</a>
-										)
-									</p>
-								</td>
-						</tr>
-					</table>
-				</div>
-			`;
-			break;
+            <dev class="col-md">
 
-		default:
-			break;
-	}
+              <div class="card bg-dark text-light" style="width: 18rem;">
+                <div class="card-body">
+                  <dev class="h1 mb-3">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make 
+                      up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">More info</a>
+                  </dev>
+                </div>
+              </div>
+
+
+            </dev>
+         
+          
+        </dev>
+
+      </dev>
+
+    </section>
+
+    <!--learn section-->
+
+    <section id="lean" class="p-5"> <!--class="p-5" :padding-5: adds space inside the <section> on all sides-->
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="learn.jpeg" class="image-fluid" alt="">
+          </div>
+
+          <div class="col-md p-5">
+            <h2>Learn The Fundamentals</h2>
+            <p>Here you are going to learn about...
+
+            </p>
+            <a href="#" class="btn btn-light mt-3"> <i class="bi bi-chevron-right"></i> Read More
+
+            </a>
+          </div>
+
+        </div>
+
+
+      </div>
 
 
 
-	// Remove 'active' class from all subtitles
-	var allSub = document.querySelectorAll('.subtitle-btn');
-	allSub.forEach(subtitle => {
-		subtitle.classList.remove('active');
-	});
+    </section>
+   <!--Learn react section-->
+    <section id="lean" class="p-5 bg-dark"> <!--class="p-5" :padding-5: adds space inside the <section> on all sides-->
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+         
+          <div class="col-md p-5 text-light">
+            <h2>Learn React</h2>
+            <p>Here you are going to learn about...
 
-	// Add 'active' class to the selected subtitle-btn
-	var currentSub = document.getElementById(section);
-	currentSub.classList.add('active');
-	
-}
+            </p>
+            <a href="#" class="btn btn-light mt-3"> <i class="bi bi-chevron-right"></i> Read More
+
+            </a>
+          </div>
+
+          <div class="col-md">
+            <img src="more.jpeg" class="image-fluid" alt="">
+          </div>
 
 
+        </div>
+
+
+      </div>
+      </section>
+
+     <!--Question Accodion section-->
+
+    <section id ="Questions" class="p-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+     
+      <!--accordion 1-->
+      <div class="accordion accordion-flush" id="Questions">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" 
+            type="button" data-bs-toggle="collapse" 
+            data-bs-target="#Question-one" 
+            >
+              Where exactly are you located?
+            </button>
+          </h2>
+          <div id="Question-one" class="accordion-collapse collapse" data-bs-parent="#Questions">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+               demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+              </div>
+          </div>
+        </div>
+        <!--accordion 2-->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" 
+            type="button" data-bs-toggle="collapse" 
+            data-bs-target="#Question-two" 
+           > How much does it costs to attend?
+            </button>
+          </h2>
+          <div id="Question-two"accordion-collapse collapse" data-bs-parent="#Questions">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+               demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. 
+               Let's imagine this being filled with some actual content.
+              </div>
+          </div>
+        </div>
+        <!--accordion 3-->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button"
+             data-bs-toggle="collapse" data-bs-target="#Question-three"
+              > What Do I need to know?
+            </button>
+          </h2>
+          <div id="Question-three" class="accordion-collapse collapse" data-bs-parent="#Questions">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+               demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. 
+               Nothing more exciting happening here in terms of content, but just filling up the space to make it look, 
+               at least at first glance, a bit more representative of how this would look in a real-world application.
+              </div>
+          </div>
+        </div>
+         <!--accordion 3-->
+         <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button"
+             data-bs-toggle="collapse" data-bs-target="#Question-four"
+              > How Do I sign up?
+            </button>
+          </h2>
+          <div id="Question-four" class="accordion-collapse collapse" data-bs-parent="#Questions">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+               demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. 
+               Nothing more exciting happening here in terms of content, but just filling up the space to make it look, 
+               at least at first glance, a bit more representative of how this would look in a real-world application.
+              </div>
+          </div>
+        </div>
+      </div>
+  
+
+    </div>
+  </section>
+
+   <!--founders-->
+  <section id="founders" class="p-5 bg-primary">
+    <div class="container">
+      <h2 class="text-center text-white"> Founders </h2>
+      <p class="lead text-center text-white mb-5">
+        Our Foounders all have 5+ years experience working as a web developer in the industry.
+      </p>
+      
+        <div class="row g-3" style="justify-content: center;">
+        
+        <!--founder 1-->
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <img src="founder5.jpeg"
+          class="rounded-circle mb-3" alt="">
+            <div class="card-body text-center">
+              <h3 class="card-title mb-3">Tshepo</h3>
+              <p>Marketing Director</p>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-github"></i></a>
+            </div>
+
+          </div>
+        </div> 
+         <!--founder 2-->
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <img src="founder4.jpeg"
+          class="rounded-circle mb-3" alt="">
+            <div class="card-body text-center">
+             <h3 class="card-title mb-3">Comfort Mahkofane</h3>
+             <p>CEO</p>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-github"></i></a>
+            </div>
+
+          </div>
+        </div>
+         <!--founder 3-->
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <img src="founder2.jpeg"
+          class="rounded-circle mb-3" alt="">
+            <div class="card-body text-center">
+              <h3 class="card-title mb-3">S. Amani Njoroge</h3>
+              <p>COO</p>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-github"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!--contact & Map section-->
+  <section class="p-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md">
+          <h2 class="text-center mb-4">Contacts Info</h2>
+          <ul class="list-group list-group-flush lead">
+            <li class="list-group-item">
+              <span class="fw-bold">Main Location:<span> 50 Main st Boston MA
+            </li>
+
+            <li class="list-group-item">
+              <span class="fw-bold">Equiry Phone:<span> +27 234 567 899
+            </li>
+
+            <li class="list-group-item">
+              <span class="fw-bold">WhatsApp Number:<span> +27 123 456 789
+            </li>
+
+            <li class="list-group-item">
+              <span class="fw-bold">Email:<span> code24Dev@code.co.za
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!--footer section-->
+  <footer class="p-5 bg-dark text-white text-center position-relative">
+    <div class="container">
+      <p class="lead">Copyright &copy; 2025 Frontend Bootsrap</p>
+      <a href="#" class="position-absolute bottom-0 end-0 p-5">
+        <i class="bi bi-arrow-up-circle h1"></i>
+      </a>
+
+    </div>
+    
+  </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
-
 </body>
-
 </html>
