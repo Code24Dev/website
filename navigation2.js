@@ -70,7 +70,7 @@ document.getElementById('navigation-container').innerHTML = `
 							<a class="nav-link active" aria-current="page" href="#services">Services</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="Contact Me 2.html">Contacts</a>
+							<a class="nav-link active" aria-current="page" href="Contact_Me.html">Contacts</a>
 						</li>
 
 					</ul>
