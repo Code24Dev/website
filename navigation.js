@@ -30,7 +30,7 @@ document.getElementById('navigation-container').innerHTML = `
 			color: rgba(98, 42, 15, 1);
 		}
 
-		/* Not necessarily used if navigation bar has words instead of figures/images */
+		/* For now only being used for the logo at the top right corner */
 		.icon-hover-msg {
 			display: none;
 			position: absolute;
