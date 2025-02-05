@@ -59,6 +59,11 @@ document.getElementById('navigation-container').innerHTML = `
 						<ul class="navbar-nav ms-auto"> <!--"ms-auto" is margin start, the aim is to shift nav-items to right-->
 							<li class="nav-item">
 								<img src="code24_logo_zoomed_in.png" style="width: 3rem;" alt="Logo">
+
+								<!-- When the mouse hovers on the image logo, it will show the user the name of the company-->
+								<div class="icon-hover-msg"> 
+									Code24
+								</div>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link active" aria-current="page" href="index.html">Home</a>
