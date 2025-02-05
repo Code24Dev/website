@@ -15,8 +15,9 @@
     <link href="style.css" rel="stylesheet" />
     <link href="styles_code24.css" rel="stylesheet">
 
-    <!-- "defer" specifies that the script is executed after everything else. Used for external scripts-->
+    <!-- "defer" specifies that the script is executed after HTML is fully loaded. Used for external scripts-->
     <script src="navigation.js" defer></script>
+    <script src="index.js" defer></script>
 
     <title>Code24</title>
 </head>
@@ -105,18 +106,42 @@
 
     <!--Services-->
     <section class="p-5">
-      <dev class="container">
+      <div class="container">
 
-        <dev class="row text-center g-4"> <!--g-4: gab 4 or g-y-->
+        <div class="row text-center g-4"> <!--g-4: gab 4 or g-y-->
 
+          <!-- Styles made specifically for the tiles/cards that feature services-->
           <style>
-            .card-width{
-              width: 23rm;
+            .card-bg {
+                position: relative; /* Ensures the pseudo-element is positioned relative to the card */
+                overflow: hidden; /* Prevents overflow if needed */
+            }
+
+            .card-bg::before {
+                content: "";  /* Required for the pseudo-element to work */
+                position: absolute; /* Allows full coverage */
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+
+                background-image: var(--bg-image);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                
+                opacity: 0.6; /* Makes background transparent */
+                z-index: -1; /* Ensures it stays behind the card content */
+            }
+
+            .card-width {
+                width: 23rem;
             }
           </style>
 
-            <dev class="col-md">
-              <div class="card bg-dark text-light card-width">
+            <!--Card 1 (Homepage)-->
+            <div class="col-md">
+              <div class="card card-bg text-light card-width">
                 <div class="card-body">
                   <div class="h1 mb-3">
                     <h5 class="card-title">
@@ -134,12 +159,13 @@
                   </div>
                 </div>
               </div>
-            </dev>
+            </div>
 
-            <dev class="col-md"> <!-- col-md: column on the medium screen-->
-              <div class="card bg-secondary text-light card-width">
+            <!--Card 2 (Homepage)-->
+            <div class="col-md"> <!-- col-md: column on the medium screen-->
+              <div class="card card-bg text-light card-width">
                 <div class="card-body">
-                  <dev class="h1 mb-3">
+                  <div class="h1 mb-3">
                     <h5 class="card-title">
                       AI-Driven Solutions
                     </h5>
@@ -152,16 +178,16 @@
                     <a href="#" class="btn btn-dark">
                       More info
                     </a>
-                  </dev>
+                  </div>
                 </div>
               </div>
-            </dev>
+            </div>
 
-            <dev class="col-md">
-
-              <div class="card bg-dark text-light card-width">
+            <!--Card 3 (Homepage)-->
+            <div class="col-md">
+              <div class="card card-bg text-light card-width">
                 <div class="card-body">
-                  <dev class="h1 mb-3">
+                  <div class="h1 mb-3">
                     <h5 class="card-title">
                       Assistance
                     </h5>
@@ -174,18 +200,12 @@
                     <a href="#" class="btn btn-primary">
                       More info
                     </a>
-                  </dev>
+                  </div>
                 </div>
               </div>
-
-
-            </dev>
-         
-          
-        </dev>
-
-      </dev>
-
+            </div>
+        </div>
+      </div>
     </section>
 
     <!--learn section-->
@@ -206,15 +226,10 @@
 
             </a>
           </div>
-
         </div>
-
-
       </div>
 
-
-
-    </section>
+  </section>
    <!--Learn react section-->
     <section id="lean" class="p-5 bg-dark"> <!--class="p-5" :padding-5: adds space inside the <section> on all sides-->
       <div class="container">
@@ -251,10 +266,7 @@
       <div class="accordion accordion-flush" id="Questions">
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" 
-            type="button" data-bs-toggle="collapse" 
-            data-bs-target="#Question-one" 
-            >
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Question-one">
               Where exactly are you located?
             </button>
           </h2>
@@ -267,17 +279,20 @@
         <!--accordion 2-->
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" 
-            type="button" data-bs-toggle="collapse" 
-            data-bs-target="#Question-two" 
-           > How much does it costs to attend?
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Question-two">
+              How much does it costs to attend?
             </button>
           </h2>
           <div id="Question-two"accordion-collapse collapse" data-bs-parent="#Questions">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to
-               demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. 
-               Let's imagine this being filled with some actual content.
-              </div>
+            <div class="accordion-body">
+              Placeholder content for this accordion, which is intended to
+              demonstrate the 
+              <code>
+                .accordion-flush
+              </code>
+              class. This is the second item's accordion body. 
+              Let's imagine this being filled with some actual content.
+            </div>
           </div>
         </div>
         <!--accordion 3-->
