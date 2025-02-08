@@ -113,35 +113,23 @@
           <!-- Styles made specifically for the tiles/cards that feature services-->
           <style>
             .card-bg {
-                position: relative; /* Ensures the pseudo-element is positioned relative to the card */
-                overflow: hidden; /* Prevents overflow if needed */
+              content: "";
+              position: relative;
+              overflow: hidden;
+
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
             }
 
             .card-bg::before {
-                content: "";  /* Required for the pseudo-element to work */
-                position: absolute; /* Allows full coverage */
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-
-                background-image: var(--bg-image);
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                
-                opacity: 0.6; /* Makes background transparent */
-                z-index: -1; /* Ensures it stays behind the card content */
-            }
-
-            .card-width {
-                width: 23rem;
+              opacity: 0.1;
             }
           </style>
 
             <!--Card 1 (Homepage)-->
             <div class="col-md">
-              <div class="card card-bg text-light card-width">
+              <div class="card card-bg text-light card-width "  style="background-image: url('img/web.png');">
                 <div class="card-body">
                   <div class="h1 mb-3">
                     <h5 class="card-title">
@@ -161,9 +149,10 @@
               </div>
             </div>
 
+            
             <!--Card 2 (Homepage)-->
             <div class="col-md"> <!-- col-md: column on the medium screen-->
-              <div class="card card-bg text-light card-width">
+              <div class="card card-bg text-light card-width" style="background-image: url('img/brain.png');">
                 <div class="card-body">
                   <div class="h1 mb-3">
                     <h5 class="card-title">
@@ -185,7 +174,7 @@
 
             <!--Card 3 (Homepage)-->
             <div class="col-md">
-              <div class="card card-bg text-light card-width">
+              <div class="card card-bg text-light card-width"  style="background-image: url('img/assitance.png');">
                 <div class="card-body">
                   <div class="h1 mb-3">
                     <h5 class="card-title">
