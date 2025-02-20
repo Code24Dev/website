@@ -1,55 +1,107 @@
 document.getElementById('navigation-container').innerHTML = `
-  <style>
+	<style>
 
-		.nav-opacity {
-			opacity: 0.65; /* Set the opacity level (0 to 1) for the entire container */
-		}
-
-		.navbar {
-    			background-color: #005644;
-		}
-
-		.navbar-brand {
-			font-size: 20px;
-			padding-left: 5%;
+		@media (max-width: 768px) { /* For mobile screens */
+			.nav-opacity {
+				opacity: 0.65; /* Set the opacity level (0 to 1) for the entire container */
 			}
-			
-		.nav-item {
-			font-size: 120%;
-			padding-left: 15px;
-			padding-right: 15px;
-			transition: all 0.5s ease; /* transition for smooth animation */
-			text-transform: uppercase;
-		}
 
+			.navbar {
+					background-color: #005644;
+			}
 
-		.nav-item:hover {
-			transform: scale(1.75);
-			color: rgba(98, 42, 15, 1);
-		}
+			.navbar-brand {
+				font-size: 2em;
+				padding-left: 1%;
+				}
 
-		/* For now only being used for the code lambda LOGO at the top right corner */
-		.icon-hover-msg {
-			display: none;
-			position: absolute;
-			background-color: transparent;
-			color: #fff;
-			z-index: 5;
-			padding: 2px 7px 2px 7px;
-			left: 70%; /*With regards to the top right corner of the text*/
-			top: 50%; /*With regards to the top right corner of the text*/
-			font-size: 100%;
-			transform: translateY(-50%); /* Centering it vertically */
-    		white-space: nowrap; /* Preventing text from wrapping */
-			opacity: 0;
-		}
+			.nav-item {
+				font-size: 120%;
+				padding-left: 0px;
+				padding-right: 0px;
+				transition: all 0.5s ease; /* transition for smooth animation */
+				text-transform: uppercase;
+			}
 
-		.nav-item:hover div{
-      			display: block;
+			.nav-item:hover {
+				transform: scale(1.05);
+				color: rgba(98, 42, 15, 1);
+			}
+
+			/* For now only being used for the code lambda LOGO at the top right corner */
+			.icon-hover-msg {
+				display: none;
+				position: absolute;
+				background-color: transparent;
 				color: #fff;
-				opacity: 1;
-    		}
-  </style>
+				z-index: 5;
+				left: 20%; /*With regards to the top right corner of the text*/
+				top: 50%; /*With regards to the top right corner of the text*/
+				font-size: 100%;
+				transform: translateY(-50%); /* Centering it vertically */
+				white-space: nowrap; /* Preventing text from wrapping */
+				opacity: 0; /*Because it somhow reveals itself on the right hand side with the other nav-bar items...*/
+				}
+
+			.nav-item:hover div{
+					display: block;
+					color: #fff;
+					opacity: 1;
+				}
+		}
+
+		@media (min-width: 769px) { /* For larger screens (tablets & desktops) */
+			.nav-opacity {
+				opacity: 0.65; /* Set the opacity level (0 to 1) for the entire container */
+			}
+
+			.navbar {
+					background-color: #005644;
+			}
+
+			.navbar-brand {
+				font-size: 20px;
+				padding-left: 5%;
+				}
+
+			.nav-item {
+				font-size: 120%;
+				padding-left: 15px;
+				padding-right: 15px;
+				transition: all 0.5s ease; /* transition for smooth animation */
+				text-transform: uppercase;
+			}
+
+			.nav-item:hover {
+				transform: scale(1.75);
+				color: rgba(98, 42, 15, 1);
+			}
+
+			/* For now only being used for the code lambda LOGO at the top right corner */
+			.icon-hover-msg {
+				display: none;
+				position: absolute;
+				background-color: transparent;
+				color: #fff;
+				z-index: 5;
+				padding: 2px 7px 2px 7px;
+				left: 70%; /*With regards to the top right corner of the text*/
+				top: 50%; /*With regards to the top right corner of the text*/
+				font-size: 100%;
+				font-size: 100%;
+				transform: translateY(-50%); /* Centering it vertically */
+				white-space: nowrap; /* Preventing text from wrapping */
+				opacity: 0;
+				}
+
+			.nav-item:hover div{
+					display: block;
+					color: #fff;
+					opacity: 1;
+				}
+		}
+	</style>
+
 
 	<header>
 		<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top nav-opacity"> <!--navbar-expand-lg is breakponit, the bar close when reaching this size-->
