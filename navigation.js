@@ -1,7 +1,7 @@
 document.getElementById('navigation-container').innerHTML = `
 	<style>
 
-		@media (max-width: 768px) { /* For mobile screens */
+		@media (max-width: 1000px) { /* For mobile screens (or small screened laptops)*/
 			.nav-opacity {
 				opacity: 0.65; /* Set the opacity level (0 to 1) for the entire container */
 			}
@@ -13,18 +13,15 @@ document.getElementById('navigation-container').innerHTML = `
 			.navbar-brand {
 				font-size: 2em;
 				padding-left: 1%;
-				}
+			}
 
 			.nav-item {
 				font-size: 120%;
-				padding-left: 0px;
-				padding-right: 0px;
-				transition: all 0.5s ease; /* transition for smooth animation */
-				text-transform: uppercase;
+				padding-left: .5rem;
+				padding-right: 0rem;
 			}
 
 			.nav-item:hover {
-				transform: scale(1.05);
 				color: rgba(98, 42, 15, 1);
 			}
 
@@ -35,22 +32,22 @@ document.getElementById('navigation-container').innerHTML = `
 				background-color: transparent;
 				color: #fff;
 				z-index: 5;
-				left: 20%; /*With regards to the top right corner of the text*/
+				left: 10%; /*With regards to the top right corner of the text*/
 				top: 50%; /*With regards to the top right corner of the text*/
-				font-size: 100%;
+				font-size: 1rem;
 				transform: translateY(-50%); /* Centering it vertically */
 				white-space: nowrap; /* Preventing text from wrapping */
 				opacity: 0; /*Because it somhow reveals itself on the right hand side with the other nav-bar items...*/
-				}
+			}
 
 			.nav-item:hover div{
-					display: block;
-					color: #fff;
-					opacity: 1;
-				}
+				display: block;
+				color: #fff;
+				opacity: 1;
+			}
 		}
 
-		@media (min-width: 769px) { /* For larger screens (tablets & desktops) */
+		@media (min-width: 1000px) { /* For larger screens (some tablets and desktops) */
 			.nav-opacity {
 				opacity: 0.65; /* Set the opacity level (0 to 1) for the entire container */
 			}
@@ -62,14 +59,14 @@ document.getElementById('navigation-container').innerHTML = `
 			.navbar-brand {
 				font-size: 20px;
 				padding-left: 5%;
-				}
+			}
 
 			.nav-item {
 				font-size: 120%;
 				padding-left: 15px;
 				padding-right: 15px;
 				transition: all 0.5s ease; /* transition for smooth animation */
-				text-transform: uppercase;
+				/*text-transform: uppercase;*/
 			}
 
 			.nav-item:hover {
@@ -105,42 +102,42 @@ document.getElementById('navigation-container').innerHTML = `
 
 	<header>
 		<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top nav-opacity"> <!--navbar-expand-lg is breakponit, the bar close when reaching this size-->
-				<div class="container-fluid">    <!--fixed-top: ensures when clicking the button it stays on the directed content, but when scrolling up it does not position properly to fix that we adit the custom css file-->
-					
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-						<div class="collapse navbar-collapse" id="navmenu">
-							<ul class="nav navbar-nav navbar-left">
-								<li class="nav-item">
-									<img src="img/code24_logo_zoomed_in.png" style="width: 3rem;" alt="Logo">
+			<div class="container-fluid">    <!--fixed-top: ensures when clicking the button it stays on the directed content, but when scrolling up it does not position properly to fix that we adit the custom css file-->
+				
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+					<div class="collapse navbar-collapse" id="navmenu">
+						<ul class="nav navbar-nav navbar-left">
+							<li class="nav-item">
+								<img src="img/code24_logo_zoomed_in.png" style="width: 3rem;" alt="Logo">
 
-									<!-- When the mouse hovers on the image logo, it will show the user the name of the company-->
-									<div class="icon-hover-msg"> 
-										Code24
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="collapse navbar-collapse" id="navmenu">
-							<ul class="nav navbar-nav ms-auto"> <!--"ms-auto" is margin start, the aim is to shift nav-items to right-->
-								<li class="nav-item">
-									<a class="nav-link active" aria-current="page" href="index.html">Home</a>
-								</li>
-								<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#about">About</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link active" aria-current="page" href="#services">Services</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link active" aria-current="page" href="Contact_Me.html">Contacts</a>
-								</li>
-							</ul>
-						</div>
+								<!-- When the mouse hovers on the image logo, it will show the user the name of the company-->
+								<div class="icon-hover-msg"> 
+									Code24
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="collapse navbar-collapse" id="navmenu">
+						<ul class="nav navbar-nav ms-auto"> <!--"ms-auto" is margin start, the aim is to shift nav-items to right-->
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+							</li>
+							<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#about">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#services">Services</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="Contact_Me.html">Contacts</a>
+							</li>
+						</ul>
+					</div>
 
-				</div>		
-			</nav>
+			</div>		
+		</nav>
 	</header>
 
 	<script>
