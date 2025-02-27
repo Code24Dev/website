@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    
+    <link href="style.css" rel="stylesheet">
+    <link href="styles_code24.css" rel="stylesheet">
+    
+    <!-- "defer" specifies that the script is executed after HTML is fully loaded. Used for external scripts-->
+    <script src="navigation.js" defer></script>
+    <script src="index.js" defer></script>
+    
+    <title>Code24</title>
+</head>
+<body>
+
+  <!-- Navigation container -->
+	<div id="navigation-container"></div>
+
+<!-- Showcase Section with Background Image and Text Aligned to the Bottom -->
+<section class="bg-dark text-light p-5 text-center d-flex align-items-end" style="height: 400px; opacity:0.5; background-image: url('img/about_us_image.webp'); background-size: cover; background-position: center;">
+  <div class="container">
+    <h2>Our Services</h2>
+    <p>Explore our wide range of services designed to meet your business needs.</p>
+  </div>
+</section>
+
+    
+    <section class="bg-primary text-light p-5">
+  <div class="container">
+    <div class="d-md-flex justify-content-between align-items-center text-center"> <!-- Add text-center here -->
+      <h1 class="mb-3 mb-md-0 text-center">Lets Help you to build a professional website</h1>
+    </div>
+    <p>The business that has no advertisers has no buyers.</p>
+
+  </div>
+  </section>
+
+
+ <!-- Services -->
+<section class="p-5">
+  <div class="container">
+    <div class="row w-100 justify-content-between g-4"> <!-- Use justify-content-between to ensure spacing between cards -->
+      
+      <!-- Second Card (Text Card) - Now on the left -->
+      <div class="col-md-8"> <!-- Use col-md-8 for the text card to take the remaining space -->
+        <div class="card h-100 border-0 bg-secondary opacity-75">
+          <div class="card-body">
+            <h5 class="card-title text-danger md-4 text-decoration-underline">What we offer!</h5>
+            <!--h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6-->
+            <p class="card-text fs-5 text-light"> Code24.Dev specializes in providing exceptional website development and graphic design services.
+              Our services encompass everything from intuitive landing page designs to custom website
+               development, all aimed at creating a smooth and engaging online presence for your business. </p>
+
+               <p class="card-text fs-5 text-light">
+               Whether you're a startup or a well-established enterprise, our expert team is committed to building 
+               websites and creating designs that align with your vision, business objectives, and customer experience goals..</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- First Card (Assistance) - Now on the right -->
+      <div class="col-md-4"> <!-- Adjust column width for the first card -->
+        <div class="card card-bg text-light h-100" style="background-image: url('img/about_us_image.webp'); width: 100%; min-height: 300px;">
+          <div class="card-body">
+            <h5 class="card-title">Assistance</h5>
+            <h6 class="card-subtitle mb-2 text-white">-----------------------</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">More info</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!--Services-->
+    <section class="p-5">
+      <div class="container">
+
+        <div class="row text-center g-4"> <!--g-4: gab 4 or g-y-->
+
+          <!-- Styles made specifically for the tiles/cards that feature services-->
+          <style>
+            .card-bg {
+              content: "";
+              position: relative;
+              overflow: hidden;
+
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+
+            .card-bg::before {
+              opacity: 0.1;
+            }
+          </style>
+
+            <!--Card 1 (Homepage)-->
+            <div class="col-md">
+              <div class="card card-bg text-light card-width"  style="background-image: url('img/web_1.png');">
+                <div class="card-body">
+                  <div class="h1 mb-3">
+                    <h5 class="card-title">
+                      Website Design
+                    </h5>
+                    <h6 class="card-subtitle mb-2" style="color:white;">
+                      -------------------------------
+                    </h6>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">
+                      More info
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <!--Card 2 (Homepage)-->
+            <div class="col-md"> <!-- col-md: column on the medium screen-->
+              <div class="card card-bg text-light card-width" style="background-image: url('img/brain_1.png');">
+                <div class="card-body">
+                  <div class="h1 mb-3">
+                    <h5 class="card-title">
+                      AI-Driven Solutions
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-body-primary">
+                      ---------------------------------------
+                    </h6>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">
+                      More info
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Card 3 (Homepage)-->
+            <div class="col-md">
+              <div class="card card-bg text-light card-width"  style="background-image: url('img/assitance_1.png');">
+                <div class="card-body">
+                  <div class="h1 mb-3">
+                    <h5 class="card-title">
+                      Assistance
+                    </h5>
+                    <h6 class="card-subtitle mb-2" style="color:white;">
+                      -----------------------
+                    </h6>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">
+                      More info
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="p-5">
+      <div class="container">
+
+        <div class="row text-center g-4"> <!--g-4: gab 4 or g-y-->
+
+          <!-- Styles made specifically for the tiles/cards that feature services-->
+          <style>
+            .card-bg {
+              content: "";
+              position: relative;
+              overflow: hidden;
+
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+
+            .card-bg::before {
+              opacity: 0.1;
+            }
+          </style>
+
+            <!--Card 1 (Homepage)-->
+            <div class="col-md">
+              <div class="card card-bg text-light card-width "  style="background-image: url('img/web_1.png');">
+                <div class="card-body">
+                  <div class="h1 mb-3">
+                    <h5 class="card-title">
+                      Website Design
+                    </h5>
+                    <h6 class="card-subtitle mb-2" style="color:white;">
+                      -------------------------------
+                    </h6>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">
+                      More info
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <!--Card 2 (Homepage)-->
+            <div class="col-md"> <!-- col-md: column on the medium screen-->
+              <div class="card card-bg text-light card-width" style="background-image: url('img/brain_1.png');">
+                <div class="card-body">
+                  <div class="h1 mb-3">
+                    <h5 class="card-title">
+                      AI-Driven Solutions
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-body-primary">
+                      ---------------------------------------
+                    </h6>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">
+                      More info
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Card 3 (Homepage)-->
+            <div class="col-md">
+              <div class="card card-bg text-light card-width"  style="background-image: url('img/assitance_1.png');">
+                <div class="card-body">
+                  <div class="h1 mb-3">
+                    <h5 class="card-title">
+                      Assistance
+                    </h5>
+                    <h6 class="card-subtitle mb-2" style="color:white;">
+                      -----------------------
+                    </h6>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">
+                      More info
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+      <form class="w-100 p-5 bg-light rounded shadow-lg"> <!-- Increased width & padding -->
+        <h2 class="text-center mb-4">Book Your Free Website Design Consulation Today</h2>
+        <p class="text-center mb-4 text-danger fs-5 fw-25">Our dedicated team will respond to our email in not later than 24 hours.</p>
+    
+        <!-- Email -->
+        <div class="form-group mb-3">
+          <label for="exampleInputEmail1" class="fw-bold">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+    
+        <!-- Password -->
+        <div class="form-group mb-4">
+          <label for="exampleInputPassword1" class="fw-bold">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div> 
+        <!--Text area-->
+        <div class="form-group mb-4">
+          <label for="exampleFormControlTextarea1" class="fw-bold">Briefly describe the service you are looking for (optional)</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+    
+        <!-- Category 1 Title -->
+        <p class="fw-bold mb-2">Choose the category that describes you best:</p>
+    
+        <!-- Checkboxes category 1 -->
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="checkone">
+          <label class="form-check-label" for="checkone">Small to Medium Size Business</label>
+        </div>
+        
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="checktwo">
+          <label class="form-check-label" for="checktwo">Corporate</label>
+        </div>
+        
+        <div class="form-check mb-4">
+          <input class="form-check-input" type="checkbox" id="checkthree">
+          <label class="form-check-label" for="checkthree">Marketing Agency</label>
+        </div>
+
+         <!-- Category 2 Title -->
+         <p class="fw-bold mb-2">Select service(s) are you interested in:</p>
+
+         <!-- Checkboxes category 2 -->
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="check4">
+          <label class="form-check-label" for="check5">Logo & Branding Design</label>
+        </div>
+        
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="check5">
+          <label class="form-check-label" for="check5">Website Design & Development</label>
+        </div>
+        
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="check6">
+          <label class="form-check-label" for="check6">E-Commerce Website</label>
+        </div>
+
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="check7">
+          <label class="form-check-label" for="check7">SEO Strategy</label>
+        </div>
+        
+        <div class="form-check mb-4">
+          <input class="form-check-input" type="checkbox" id="check8">
+          <label class="form-check-label" for="check8">Digital Marketing</label>
+        </div>
+
+        <!-- Category 3 Title -->
+        <p class="fw-bold mb-2">Where did you hear about us? </p>
+
+        <!-- Checkboxes category 2 -->
+       <div class="form-check mb-2">
+         <input class="form-check-input" type="checkbox" id="check9">
+         <label class="form-check-label" for="check9">Referral</label>
+       </div>
+       
+       <div class="form-check mb-2">
+         <input class="form-check-input" type="checkbox" id="check10">
+         <label class="form-check-label" for="check10">Google</label>
+       </div>
+       
+       <div class="form-check mb-2">
+         <input class="form-check-input" type="checkbox" id="check11">
+         <label class="form-check-label" for="check11">Social media</label>
+       </div>
+
+       <div class="form-check mb-2">
+         <input class="form-check-input" type="checkbox" id="check12">
+         <label class="form-check-label" for="check12">LinkedIn</label>
+       </div>
+       
+       <div class="form-check mb-2">
+         <input class="form-check-input" type="checkbox" id="check13">
+         <label class="form-check-label" for="check13">Email</label>
+       </div>
+
+       <div class="form-check mb-4">
+        <input class="form-check-input" type="checkbox" id="check14">
+        <label class="form-check-label" for="check14">Other</label>
+      </div>
+   
+    
+    
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary w-100">Submit</button>
+      </form>
+    </div>
+    
+
+
+</body>
+</html>

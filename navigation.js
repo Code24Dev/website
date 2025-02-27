@@ -128,7 +128,7 @@ document.getElementById('navigation-container').innerHTML = `
 							<a class="nav-link active" aria-current="page" href="#about">About</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#services">Services</a>
+								<a class="nav-link active" aria-current="page" href="services.html">Services</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link active" aria-current="page" href="Contact_Me.html">Contacts</a>
