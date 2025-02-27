@@ -1,0 +1,81 @@
+/* Adding custom styles that will be referenced by 'Contact_Me.html'*/
+
+@font-face {
+    font-family: 'Argent CF Regular';
+    src: url('path/to/ArgentCF-Regular.ttf') format('truetype'); /* or .woff for WOFF format */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background-image: url('https://github.com/Amani5576/SHA-1-cryptography/blob/main/Background-Image-Contact-Me.jpg?raw=true');
+}
+
+.details-container {
+	align-items: center; /* Center items vertically */
+	border-radius: 0px;
+	text-align: center;
+	padding: 15px;
+}
+
+.details-container h1 {
+	font-size: 250%;
+	font-weight: bold;
+	font-family: 'Baloo Tamma 2', cursive; /* Set the font family to Balloon XBD BT or fallback to cursive */
+}
+.d-c-level-1{ /*details container level 1*/
+	background-color: #1C05B3; /* Color = St. Patrick's Blue */
+	box-shadow: 0 0 10px rgba(150, 150, 150, 1);
+}
+
+.d-c-level-2-color{ /*details container level 2*/
+	background-color: #23297A;  /* Color = TryPan Blue */
+}
+
+.details-container p{
+	font-family: 'Book Antiqua', sans-serif;
+	font-size: 100%;
+	color: #fff;
+}
+
+.input-params {
+	background-color: #23297A;  /* Color = TryPan Blue */
+	padding: 8px;
+	margin-bottom: 16px; /* Add space between elements */
+	width: 100%;
+}
+
+.white-text-input {
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.border-underline {
+	border: none;
+	/* Adding border at the bottom */
+	border-bottom: 2px solid rgba(0, 204, 255, 0.5); /* Color = Vivid Sky Blue */
+}
+
+input::placeholder, textarea::placeholder{
+	color: rgba(0, 204, 255, 0.5); /* Color = Vivid Sky Blue */
+}
+
+textarea {
+	resize: vertical; /* Allow vertical resizing only */
+	overflow: auto; /* Provide a scrollbar if the content overflows */
+	height: 150px;
+}
+
+#submit-button {
+	color: #fff;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 50px;
+	border-color: rgba(200, 200, 200,0.5);
+	font-family: 'Times New Roman', cursive; /* Set the font family to Balloon XBD BT or fallback to cursive */
+	width: 20%;
+}
+
+#submit-button:hover {
+	background-color: rgba(64,224,208,0.6); /* Color = Turqoise (#40e0d0)*/
+	border: none;
+	}

@@ -1,0 +1,147 @@
+/* Adding custom styles that will be referenced by 'index.html'*/
+
+body {
+	font-family: 'Arial', sans-serif;
+	background-image: url('https://github.com/Amani5576/SHA-1-cryptography/blob/main/Background-Image-Main.jpg?raw=true');
+}
+
+.profile-container-main {
+	align-items: center;
+	background-color: rgba(210, 180, 140, 0.3);  /*red, green, blue. alpha (transparency), Color = Tan*/
+	padding: 20px;
+	border-radius: 30px;
+}
+
+.profile-container {
+	background-color: rgba(123, 63, 0, 0.6); /*Color = Chocolate*/
+	padding: 30px;
+	border-radius: 100px;
+	align-items: center;
+	justify-content: center;
+}
+
+.profile-section {
+	margin-bottom: 20px;
+}
+
+.profile-section h4 {
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	text-decoration: underline;
+	font-family: 'Century Gothic', sans-serif;
+}
+
+.profile-content {
+	color: rgba(230, 230, 230, 1);
+	padding: 15px;
+}
+
+.profile-content #name {
+	font-size: 4.4vh;
+	color: rgba(245, 245, 220, 1); /*Color = Beige*/  /* rgba(128, 70, 27, 1); Color = Russet*/
+	font-family: 'Harlow Solid'; /*'Stencil', sans-serif;*/
+}
+
+.profile-content ul {
+	margin-left: 15px; /*Indenting the list in container to the right*/
+}
+
+.profile-photo {
+	border-radius: 50%;
+	width: 300px;
+	height: 450px;
+}
+
+.indent {
+	text-indent: 30px;
+}
+
+.double-line {
+	text-decoration: none;
+	position: relative;
+	display: inline-block; /* Ensuring that the span tag only takes the width of the text its wrapping*/
+}
+
+.double-line::before, .double-line::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px; /* Thickness of the lines */
+	background-color: black; /* Color of the lines */
+	display: block; /* Ensuring lines take up full width */
+}
+
+.double-line::before {
+	top: -3px; /* Distance of line above text */
+	border-top: 2px solid black; /*The Actual line above the text*/
+}
+
+.double-line::after {
+	bottom: -3px; /* Distance of line underneath text */
+	border-bottom: 2px solid black; /*The Actual line underneath the text*/
+}
+
+.banner {
+	/*Makes subtitles in the banner be horizontal to each other rather than looking stacked*/
+	display: flex;
+        justify-content: space-around;
+	margin-bottom: 20px; /*For spacing */
+}
+
+.subtitle-btn {
+	font-weight: bold;
+	font-family: 'Century Gothic', sans-serif;
+	padding: 10px 20px; /* Adjust padding as needed */
+	border: none;
+	color: rgba(255, 255, 255, 1);
+	background-color: transparent;
+	cursor: pointer;
+	font-size: 18px; /* Adjust font size as needed */
+	transition: font-size 0.3s; /* Add a smooth transition effect */
+}
+
+.subtitle-btn.active {
+	font-size: 35px; /* Increase font size for the active button */
+	color: rgba(210, 180, 140, 1); /*Color = Tan*/
+}
+
+.profile-page-wrapping {
+	margin: 3% 3% 3%; /*(top, right&left, bottom)*/
+}
+
+td { /* Basically first column only*/
+	border: none;
+	border-right: 1px solid rgba(255, 255, 255, 1);
+	text-align: right;
+}
+
+td:last-child { /*The last column*/
+	border-right: none; /* Removing border on the last column */
+	text-indent: 25px;
+	text-align: left;
+}
+
+.col_1 {
+    padding-right: 25px;
+}
+
+.video-container {
+    width: 100%; /* Full width */
+    height: 450px; /* Set desired height */
+    overflow: hidden; /* Hide the overflowing parts */
+    position: relative;
+}
+
+.cropped-video {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Crop the video */
+    position: absolute;
+    top: 50%; /* Move video to center */
+    transform: translateY(-50%); /* Adjust for perfect centering */
+}
+
+.carousel-caption{
+
+}

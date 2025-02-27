@@ -1,0 +1,20 @@
+/* Adding custom styles that will be referenced by ALL html files*/
+
+.container-flexibility {
+	min-height: 50px; /* Set a minimum height */
+	max-height: 5000px; /* Set a maximum height */
+	overflow: hidden; /* Hide overflow content if it exceeds max-height */
+}
+
+h1 {
+	font-family: 'Candara', 'Segoe', 'Segoe UI', 'Helvetica Neue', 'Arial', sans-serif;
+	color: rgba(255,255,255,1); /*Color = white */
+}
+
+.common-img-bg-settings {
+    margin: 0; /* Ensuring background covers entire viewport without any space around it */
+    background-size: cover; /* Keeps the full image visible without cropping */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-attachment: fixed; /* Fixes the background in place (won't resize with viewport) */
+}
